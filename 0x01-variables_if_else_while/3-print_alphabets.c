@@ -2,27 +2,19 @@
 
 /**
  * main - Entry
-
- * Return: return 0
+ * Return: Always 0
  */
 int main(void)
 {
-	int letter;
+	char alpha;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		letter = tolower(letter);
-		putchar(letter);
-		if (letter == 'z')
-		{
-			letter = 'A';
-			for (; letter <= 'Z'; letter++)
-			{
-				putchar(letter);
-			}
-			break;
-		}
-	}
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+		putchar(alpha);
+
+	for (alpha = 'A'; alpha <= 'Z'; alpha++)
+		putchar(alpha);
+
 	putchar('\n');
+
 	return (0);
 }
